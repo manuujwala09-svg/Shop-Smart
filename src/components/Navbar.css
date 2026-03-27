@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6E0775;
+}
+
+.navbar-address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.address-icon {
+    color: #6E0775;
+}
+
+.address-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.4rem 0.6rem;
+    width: 180px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.navbar-search input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 24px 0 0 24px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.navbar-search button {
+    background-color: #6E0775;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0 24px 24px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #6E0775;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.login-btn,
+.signup-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #6E0775;
+    color: #6E0775;
+    background: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-btn {
+    background-color: #6E0775;
+    color: #fff;
+    border: none;
+}

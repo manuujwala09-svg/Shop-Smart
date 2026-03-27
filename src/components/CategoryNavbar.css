@@ -1,0 +1,48 @@
+/* src/components/CategoryNavbar.css */
+.category-navbar {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-scroll {
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(110, 7, 117, 0.3);
+}
+
+.icon-circle {
+    background-color: #6E0775;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-item.active .icon-circle {
+    box-shadow: 0 0 10px #6E0775;
+}
+
+.category-item span {
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,79 @@
+/* src/components/category.css */
+.categories-section {
+    padding: 30px 0;
+    background-color: #f7f7f7;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    color: #6E0775;
+    /* Purple */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.categories-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(110, 7, 117, 0.5);
+    background-color: #6E0775;
+    /* purple hover */
+    color: #fff;
+}
+
+.category-card span,
+.category-name {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6E0775;
+}
+
+.category-card:hover span,
+.category-card:hover .category-name {
+    color: #fff;
+}
+
+/* Scrollable Navbar Categories */
+.categories-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.categories-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+    background-color: #6E0775;
+    border-radius: 3px;
+}
+
+.category-card.selected {
+    border: 2px solid #6E0775;
+    box-shadow: 0 0 10px #6E0775;
+}
