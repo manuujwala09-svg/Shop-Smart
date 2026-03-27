@@ -1,0 +1,62 @@
+# ===============================
+# 🌐 Full Stack Project .gitignore
+# Backend: Node/Express
+# Frontend: React/Next.js
+# ===============================
+
+# === Node Modules ===
+node_modules/
+Backend/node_modules/
+
+# === Environment Files ===
+.env
+.env.*
+Backend/.env
+Backend/.env.*
+
+# === Build Outputs ===
+dist/
+build/
+.next/
+out/
+coverage/
+.cache/
+.tmp/
+
+# === Logs ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === IDE & System Files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# === Dependency Lock Files (optional to ignore) ===
+# Uncomment if you don’t want to commit them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# === Test and Misc ===
+*.tsbuildinfo
+*.pid
+*.seed
+*.pid.lock
+
+# === Local Tools ===
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Firebase / Cloud / Others ===
+firebase-debug.log
+*.bak
+*.orig
